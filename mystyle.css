@@ -1,0 +1,665 @@
+
+/* ==========================================
+   SPACE OUTPOST - WEB TECHNOLOGIES EXERCISE 2
+   Central CSS Stylesheet
+   ========================================== */
+
+
+/* 1. GENERAL SETTINGS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #060c15;
+    color: #F2F6FA;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+
+/* 2. MAIN PAGE CONTAINER */
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #060c15;
+    border: 1px solid #0a151f;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* 3. HEADER */
+
+header {
+    padding: 20px;
+    background-color: #111923;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #aab8bc;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #bebaba;
+    font-size: 24px;
+}
+
+h3 {
+    color: #67D8FF;
+    font-size: 18px;
+}
+
+h4 {
+    color: #4489a0;
+    font-size: 16px;
+}
+
+
+/* 4. PARAGRAPHS */
+
+p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: right;
+    color: #D5E3F0;
+}
+
+
+/* 5. NAVIGATION BAR */
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav li {
+    margin: 5px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* Remove default bullets from all unordered lists */
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* 6. LINK STYLES */
+
+/* Unvisited links */
+a:link {
+    color: #67D8FF;
+    text-decoration: none;
+}
+
+/* Visited links */
+a:visited {
+    color: #B99BFF;
+}
+
+/* Mouse hover */
+a:hover {
+    color: #FFFFFF;
+    background-color: #007D99;
+    text-decoration: underline;
+}
+
+/* Active links */
+a:active {
+    color: #00A6C8;
+}
+
+/* Keyboard accessibility */
+a:focus-visible {
+    outline: 2px solid #67D8FF;
+    outline-offset: 3px;
+}
+
+
+/* 7. MAIN CONTENT */
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+}
+
+
+/* 8. HORIZONTAL LINES */
+
+hr {
+    border: none;
+    border-top: 1px solid #31516E;
+    margin: 25px 0;
+}
+
+
+/* 9. TABLE DESIGN */
+
+table {
+    width: 100%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: #03080e;
+}
+
+th {
+    background-color: lightgray;
+    color: #091629;
+    font-size: 13px;
+}
+
+th, td {
+    border: 1px solid #496784;
+    padding: 12px;
+}
+
+td {
+    color: #F2F6FA;
+}
+
+td img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* 10. FORM DESIGN */
+
+form {
+    width: 100%;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #142D49;
+    border: 1px solid #31516E;
+    border-radius: 12px;
+    text-align: left;
+}
+
+
+/* 11. FORM LABELS */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* 12. INPUT FIELDS */
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #66839F;
+    border-radius: 6px;
+    background-color: #F2F6FA;
+    color: #091629;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #67D8FF;
+    border-color: #67D8FF;
+}
+
+
+/* 13. BUTTONS */
+
+button {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #00A6C8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007D99;
+}
+
+
+/* 14. IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* 15. FOOTER */
+
+footer {
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #31516E;
+    color: #AFC4D8;
+}
+
+
+
+
+/* =====================================
+   HOMEPAGE DESIGN - TASK 3
+   ===================================== */
+
+/* Brand slogan */
+.tagline {
+    text-align: center;
+    font-size: 16px;
+    color: #D5E3F0;
+}
+
+/* Hero section */
+.hero {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #09182a;
+    border-radius: 12px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hero-content {
+    padding: 20px;
+}
+
+.hero-content h2 {
+    color: #67D8FF;
+}
+
+.hero-content p {
+    text-align: center;
+    max-width: 650px;
+    margin: 15px auto 25px;
+}
+
+/* Main call-to-action link */
+.shop-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00A6C8;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.shop-button:visited {
+    color: white;
+}
+
+.shop-button:hover {
+    background-color: #007D99;
+    color: white;
+    text-decoration: none;
+}
+
+/* Featured product categories */
+.featured-categories {
+    margin: 40px 0;
+}
+
+.section-intro {
+    text-align: center;
+}
+
+/* Category card layout */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.category-card {
+    padding: 20px;
+    background-color: #142D49;
+    border: 1px solid #31516E;
+    border-radius: 10px;
+}
+
+.category-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.category-card h3 {
+    margin-top: 15px;
+}
+
+.category-card p {
+    text-align: center;
+}
+
+.category-card a {
+    display: inline-block;
+    padding: 9px 16px;
+    background-color: #0B1C32;
+    border-radius: 5px;
+}
+
+.all-products-link {
+    display: inline-block;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Homepage responsive layout */
+@media (max-width: 700px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 12px;
+    }
+
+    .hero-content {
+        padding: 10px;
+    }
+
+    .hero img {
+        max-height: 220px;
+    }
+}
+
+
+/* =====================================
+   ABOUT US PAGE
+   ===================================== */
+
+.about-intro {
+    padding: 25px;
+    margin: 25px 0;
+    background-color: #09182a;
+    border-radius: 10px;
+}
+
+.about-intro p {
+    text-align: center;
+}
+
+.about-section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #09182a;
+    border-radius: 10px;
+}
+
+.about-section p {
+    text-align: center;
+}
+
+/* Company and contact information */
+.info-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.info-list li {
+    margin-bottom: 12px;
+    color: #D5E3F0;
+}
+
+
+/* CATEGORIES PAGE */
+
+/* Introduction section */
+.catalog-intro {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #09182a;
+    border-radius: 10px;
+}
+
+.catalog-intro p {
+    text-align: center;
+}
+
+/* Product catalog section */
+.catalog-section {
+    margin: 30px 0;
+}
+
+.catalog-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Makes the table scrollable on smaller screens */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+/* Catalog table */
+.catalog-table {
+    width: 100%;
+    min-width: 950px;
+    border-collapse: collapse;
+}
+
+.catalog-table th,
+.catalog-table td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.catalog-table td img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    padding: 4px;
+}
+
+.catalog-table td strong {
+    color: #67D8FF;
+}
+
+.catalog-table td a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007D99;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.catalog-table td a:hover {
+    background-color: #00A6C8;
+    text-decoration: none;
+}
+
+
+/* LOGIN PAGE - TWO COLUMN DESIGN */
+
+.login-main {
+    display: flex;
+    max-width: 1000px;
+    min-height: 480px;
+    margin: 40px auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #142D49;
+    border: 1px solid #31516E;
+    border-radius: 12px;
+}
+
+/* LEFT IMAGE SECTION */
+
+.login-image-section {
+    flex: 1;
+    min-height: 480px;
+    background-image: url("Images/logim-space.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    text-align: left;
+}
+
+.image-text {
+    background-color: rgba(9, 22, 41, 0.75);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.image-text h2 {
+    color: #67D8FF;
+}
+
+.image-text p {
+    text-align: left;
+}
+
+/* RIGHT LOGIN SECTION */
+
+.login-content {
+    flex: 1;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-content > h2,
+.login-content > p {
+    text-align: center;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 380px;
+    margin: 20px auto 0;
+}
+
+.login-form h3 {
+    text-align: center;
+}
+
+.login-form button {
+    width: 100%;
+}
+
+.register-prompt {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+    .login-main {
+        flex-direction: column;
+    }
+
+    .login-image-section {
+        min-height: 250px;
+    }
+
+    .login-content {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+/* Mobile adjustments */
+@media (max-width: 700px) {
+    .catalog-intro {
+        padding: 15px;
+    }
+
+    .catalog-table th,
+    .catalog-table td {
+        padding: 8px;
+    }
+}
+
+/* 16. RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .page-container {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

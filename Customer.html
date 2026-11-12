@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers - Astro Gear Shop</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🚀 Astro Gear Shop</h1>
+        
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="Categories.html">Products</a> |
+            <a href="About.html">Contact</a>
+        </nav>
+
+        <hr>
+    </header>
+
+
+    <main>
+
+        <h2>Our Customers</h2>
+
+        <p>
+            Welcome to our customer page! Here you can find information
+            about our valued Astro Gear Shop customers.
+        </p>
+
+        <h3>Customer List</h3>
+
+        <table border="1">
+            <tr>
+                <th>Customer ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Country</th>
+            </tr>
+
+            <tr>
+                <td>C001</td>
+                <td>John Smith</td>
+                <td>john@example.com</td>
+                <td>Germany</td>
+            </tr>
+
+            <tr>
+                <td>C002</td>
+                <td>Emma Johnson</td>
+                <td>emma@example.com</td>
+                <td>USA</td>
+            </tr>
+
+            <tr>
+                <td>C003</td>
+                <td>Alex Brown</td>
+                <td>alex@example.com</td>
+                <td>Canada</td>
+            </tr>
+        </table>
+
+
+        <br>
+
+        <h3>Customer Registration</h3>
+
+        <form>
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required>
+
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="">Select your country</option>
+                <option value="germany">Germany</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+            </select>
+
+            <br><br>
+
+            <label for="interest">What are you interested in?</label><br>
+
+            <input type="checkbox" id="telescopes" name="interest">
+            <label for="telescopes">Telescopes</label><br>
+
+            <input type="checkbox" id="accessories" name="interest">
+            <label for="accessories">Accessories</label><br>
+
+            <input type="checkbox" id="spacegear" name="interest">
+            <label for="spacegear">Space Gear</label>
+
+            <br><br>
+
+            <input type="submit" value="Register">
+
+        </form>
+
+    </main>
+
+
+    <hr>
+
+    <footer>
+        <p>© 2026 Astro Gear Shop | Explore the Universe 🚀</p>
+    </footer>
+
+</body>
+</html>
